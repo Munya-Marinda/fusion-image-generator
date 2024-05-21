@@ -1,3 +1,55 @@
+# Fusion Image Generator
+
+This web application allows you to interact with an Image Generation AI model hosted on Hugging Face. The application retrieves an API key dynamically and uses it to make authenticated requests to the Hugging Face API.
+
+## Main Feature
+
+- **Text-to-Image**: Generate images based on a user prompt using the StabilityAI's Stable Diffusion model.
+
+## Prerequisites
+
+- Node.js and npm installed
+- Access to the internet for API requests
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Munya-Marinda/fusion-image-generator
+cd fusion-image-generator
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Configuration
+
+The application fetches the Hugging Face API key from an external server. Ensure the API endpoint and access details are correctly configured in the `getApiKey` function.
+
+### Running the Application
+
+To start the application in, run:
+
+```bash
+npx next dev
+```
+
+## Contributing
+
+Contributions are welcome! Please create a pull request with detailed information about your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Contact
+
+For questions or support, please open an issue in the repository or contact the maintainer at munyathedev@gmail.com
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

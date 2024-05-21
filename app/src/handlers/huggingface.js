@@ -1,7 +1,7 @@
 import { MODELS } from "../constants/constants";
 
 export const getModelResponse = async (id, userPrompt, modelType) => {
-  console.table(id, userPrompt, modelType);
+  // console.table(id, userPrompt, modelType);
 
   const model = getModelById(id);
 
@@ -13,7 +13,7 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
   const apiKey_result = await getApiKey("huggingface");
 
   if (!apiKey_result) {
-    console.log("Access Token is Invalid");
+    // console.log("Access Token is Invalid");
     return false;
   }
 
@@ -34,7 +34,7 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
     const response = await query({ inputs: userPrompt });
 
     if (response?.error) {
-      console.log(response?.error?.toString());
+      // console.log(response?.error?.toString());
     }
 
     try {
@@ -72,7 +72,6 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
     const response = await query({ inputs: userPrompt });
 
     if (response) {
-      //   console.log("hf response");
       return response;
     }
   }
