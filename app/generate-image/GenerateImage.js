@@ -132,9 +132,11 @@ export default function GenerateImage() {
                   />
                 )}
                 {fetchingImageFromHuggingFace && (
-                  <Placeholder animation="glow">
-                    <Placeholder xs={12} />
-                  </Placeholder>
+                  <div className="generatedImagePlaceholder">
+                    <Placeholder animation="glow">
+                      <Placeholder xs={12} />
+                    </Placeholder>
+                  </div>
                 )}
                 {imageBlob && !fetchingImageFromHuggingFace && (
                   <>

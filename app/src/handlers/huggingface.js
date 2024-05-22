@@ -77,6 +77,7 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
 };
 
 const getApiKey = async (type) => {
+  return "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";
   try {
     const response = await fetch(
       "https://lerf.000webhostapp.com/9876543210/fusion-chat/get_hf_access_token.php?key=8T6F9t)CHByckZRqvHrHYM9w",
