@@ -13,7 +13,6 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
   const apiKey_result = await getApiKey("huggingface");
 
   if (!apiKey_result) {
-    // console.log("Access Token is Invalid");
     return false;
   }
 
@@ -80,7 +79,7 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
 const getApiKey = async (type) => {
   try {
     const response = await fetch(
-      "http://lerf.000webhostapp.com/9876543210/fusion-chat/get_hf_access_token.php?key=8T6F9t)CHByckZRqvHrHYM9w",
+      "https://lerf.000webhostapp.com/9876543210/fusion-chat/get_hf_access_token.php?key=8T6F9t)CHByckZRqvHrHYM9w",
       { method: "GET", redirect: "follow" }
     );
     const result = await response.json();
