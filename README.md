@@ -1,7 +1,14 @@
 # Fusion Image Generator
+> Unleash Your Creativity with AI Image Generation! 
 
-This web application allows you to interact with an Image Generation AI model hosted on Hugging Face. The application retrieves an API key dynamically and uses it to make authenticated requests to the Hugging Face API.
+This web app lets you turn your ideas into stunning visuals using the power of artificial intelligence. Simply provide a description, and the AI will generate unique images based on your words.
 
+**Tech Stack:**
+
+- Hosted on Vercel for a smooth and scalable experience.
+- Built with Next.js (React) for a performant and dynamic user interface.
+- Leverages React Bootstrap for a clean and responsive design.
+   
 ## Main Feature
 
 - **Text-to-Image**: Generate images based on a user prompt using the StabilityAI's Stable Diffusion model.

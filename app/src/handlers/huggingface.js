@@ -1,5 +1,8 @@
 import { MODELS } from "../constants/constants";
 
+const dotenv = require("dotenv");
+dotenv.config();
+
 export const getModelResponse = async (id, userPrompt, modelType) => {
   // console.table(id, userPrompt, modelType);
 
@@ -10,7 +13,7 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
     return false;
   }
 
-  const apiKey_result = await getApiKey("huggingface");
+  const apiKey_result = process.env.NEXT_PUBLIC_HUGGINGFACE_API_KEY;
 
   if (!apiKey_result) {
     return false;
@@ -73,27 +76,6 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
     if (response) {
       return response;
     }
-  }
-};
-
-const getApiKey = async (type) => {
-  return "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";
-  try {
-    const response = await fetch(
-      "https://lerf.000webhostapp.com/9876543210/fusion-chat/get_hf_access_token.php?key=8T6F9t)CHByckZRqvHrHYM9w",
-      { method: "GET", redirect: "follow" }
-    );
-    const result = await response.json();
-    const huggingface_api_key = result?.access_token;
-    if (huggingface_api_key) {
-      return huggingface_api_key;
-    } else {
-      console.error("No access token found");
-      return false;
-    }
-  } catch (error) {
-    console.error("Error fetching access token:", error);
-    return false;
   }
 };
 
