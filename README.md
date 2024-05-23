@@ -1,6 +1,12 @@
-# Fusion Image Generator
-> Unleash Your Creativity with AI Image Generation! 
+![image](https://github.com/Munya-Marinda/fusion-image-generator/assets/84540577/90bc895f-d661-4f15-aee3-7edea05db420)
 
+# Fusion Image Generator
+
+> Unleash Your Creativity with AI Image Generation!
+
+<img src="https://github.com/Munya-Marinda/fusion-image-generator/blob/main/public/assets/banner-2.png?raw=true" />
+
+ 
 This web app lets you turn your ideas into stunning visuals using the power of artificial intelligence. Simply provide a description, and the AI will generate unique images based on your words.
 
 **Tech Stack:**
@@ -32,10 +38,6 @@ cd fusion-image-generator
 ```bash
 npm install
 ```
-
-### Configuration
-
-The application fetches the Hugging Face API key from an external server. Ensure the API endpoint and access details are correctly configured in the `getApiKey` function.
 
 ### Running the Application
 
