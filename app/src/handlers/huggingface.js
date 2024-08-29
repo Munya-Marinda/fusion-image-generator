@@ -49,7 +49,7 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
 
   if (modelType === "text-to-image") {
     const API_URL =
-      "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0";
+      "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev";
 
     const query = async (data) => {
       try {
@@ -60,6 +60,8 @@ export const getModelResponse = async (id, userPrompt, modelType) => {
           method: "POST",
           body: JSON.stringify(data),
         });
+
+        // console.log('response', response)
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

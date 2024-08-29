@@ -78,6 +78,9 @@ html {
   background-size: 200% 200%;
   animation: gradientAnimation 5s ease infinite;
   background-image: linear-gradient(120deg, #1a1a1a, #333);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 @keyframes gradientAnimation {
